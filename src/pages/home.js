@@ -1,22 +1,9 @@
 import React from 'react'
 import { Container, Row, Col, Card, ListGroup, Carousel } from 'react-bootstrap';
-import { useAuth } from '../pages/context/AuthContext';
 
 function Home() {
-    const { user } = useAuth();
-
     return (
         <Container className="mt-5">
-
-            {user && (
-                <Row className="mb-4 justify-content-center">
-                    <Col md={8} className="text-center greeting-box">
-                        <h2 className="greeting-title">Benvenuto, {user.firstName}!</h2>
-                        <p className="greeting-message">Grazie per esserti registrato e per aver visitato il mio sito! Sono felice che tu abbia deciso di esplorare i miei progetti. Spero che troverai ciò che stai cercando.</p>
-                    </Col>
-                </Row>
-            )}
-
             <Row className="justify-content-center my-4">
                 <Col md={9}>
                     <Card className="border-primary shadow-sm bg-light rounded">
