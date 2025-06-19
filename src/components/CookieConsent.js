@@ -1,20 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Button, Modal } from "react-bootstrap";
 
 const CookieConsent = () => {
   const [showModal, setShowModal] = useState(false);
   const [showCookieConsent, setShowCookieConsent] = useState(false);
+  const messageReceivedRef = useRef(false);
 
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent");
-    window.addEventListener("message", (event) => {
+
+    const handleMessage = (event) => {
       if (event.data?.type === "HIDE_COOKIES_BANNER") {
-        return;
+        messageReceivedRef.current = true;
       }
-    });
+    };
+
+    window.addEventListener("message", handleMessage);
+
     if (!consent) {
-      setShowCookieConsent(true);
+      setTimeout(() => {
+        if (!messageReceivedRef.current) {
+          setShowCookieConsent(true);
+        }
+      }, 300);
     }
+
+    return () => window.removeEventListener("message", handleMessage);
   }, []);
 
   const handleAcceptAll = () => {
