@@ -250,8 +250,8 @@ function Home() {
                     </Card>
                     <Card className="mb-4 shadow-lg">
                         <Card.Body>
-                            <div>
-                            <CorporationIframe key={0} demoUrl="https://corporationpage.vercel.app" />
+                            <div style={{ marginBottom: "20px" }}>
+                                <CorporationIframe style={{ height: "250px" }} key={0} demoUrl="https://corporationpage.vercel.app" />
                             </div>
                             <Card.Title className='fw-semibold' >Corporation</Card.Title>
                             <Card.Text>
