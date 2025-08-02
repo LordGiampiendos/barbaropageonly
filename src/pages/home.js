@@ -124,7 +124,7 @@ function Home() {
                                     <i className="bi bi-flag text-muted me-2" /> 🇫🇷 Francese – <strong>A1</strong> (pieno)
                                 </ListGroup.Item>
                                 <ListGroup.Item>
-                                    <i className="bi bi-flag text-muted me-2" /> 🇪🇸 Spagnolo – <strong>A1</strong> (base)
+                                    <i className="bi bi-flag text-muted me-2" /> 🇪🇸 Spagnolo – <strong>A1</strong> (pieno)
                                 </ListGroup.Item>
                                 <ListGroup.Item>
                                     <i className="bi bi-flag text-muted me-2" /> 🇩🇪 Tedesco – <strong>Livello base</strong>
@@ -172,14 +172,27 @@ function Home() {
                     </Card>
                     <Card className="mb-4 shadow-lg">
                         <Card.Body>
-                            <Card.Title className="fw-semibold mb-2">
+                            <Card.Title className="fw-semibold mb-4">
                                 Esperienze Lavorative
                             </Card.Title>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>
-                                    <strong>Ruolo:</strong> Tutor per studenti diversamente abili e neuro diversi<br />
-                                    <strong>Ente:</strong> Università degli Studi di Palermo<br />
-                                    <strong>Descrizione:</strong> Attività di supporto personalizzato per studenti con bisogni educativi speciali, contribuendo alla piena inclusione accademica.
+                                <ListGroup.Item className="py-3 border-0 shadow-sm rounded-3 mb-3">
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <h5 className="text-dark"><strong>Ruolo:</strong> Tech Consulting</h5>
+                                        <span className="badge bg-secondary">Lipari Consulting</span>
+                                    </div>
+                                    <p className="mt-2 text-muted">
+                                        <strong>Descrizione:</strong> Attività di analisi, implementazione e ottimizzazione di soluzioni tecnologiche per aziende di diverse dimensioni e settori.
+                                    </p>
+                                </ListGroup.Item>
+                                <ListGroup.Item className="py-3 border-0 shadow-sm rounded-3 mb-3">
+                                    <div className="d-flex justify-content-between align-items-center">
+                                        <h5 className="text-dark"><strong>Ruolo:</strong> Tutor per studenti diversamente abili e neurodiversi</h5>
+                                        <span className="badge bg-secondary">Università degli Studi di Palermo</span>
+                                    </div>
+                                    <p className="mt-2 text-muted">
+                                        <strong>Descrizione:</strong> Attività di supporto personalizzato per studenti con bisogni educativi speciali, contribuendo alla piena inclusione accademica.
+                                    </p>
                                 </ListGroup.Item>
                             </ListGroup>
                         </Card.Body>
@@ -266,3 +279,4 @@ function Home() {
 }
 
 export default Home;
+
