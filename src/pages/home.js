@@ -36,7 +36,7 @@ function Home() {
                             <h2 className="text-primary mb-3 fw-semibold">Chi Sono</h2>
                             <p>
                                 Io sono <strong>Giampiero Barbaro</strong>, laureato alla magistrale di ingegneria informatica dell'Università di Palermo.
-                                Sono un esperto ed appassionato che lavora per creare soluzioni innovative e personalizzate per ogni cliente.
+                                Sono un esperto ed appassionato che lavora per creare soluzioni innovative e personalizzate per ogni cliente.<br />Attualmente lavoro come Tech Consulting alla Lipari Consulting.
                             </p>
                             <p>
                                 Non mi occupo solo di <strong>siti web</strong>, ma anche di <strong>mobile</strong>, soluzioni <strong>hardware</strong> ed <strong>embedded</strong>.
@@ -229,6 +229,7 @@ function Home() {
                                     <ListGroup.Item>Assembly</ListGroup.Item>
                                     <ListGroup.Item>Forth</ListGroup.Item>
                                     <ListGroup.Item>C / C++</ListGroup.Item>
+                                    <ListGroup.Item>Scrum Fundamentals Certified (SFC™) (Livello Base)</ListGroup.Item>
                                     <ListGroup.Item>Java / Java Enterprise / Jakarta (Jsp, Servlet, Spring Boot, Spring Security)</ListGroup.Item>
                                     <ListGroup.Item>PHP / Javascript (React, React Native, Bootstrap)</ListGroup.Item>
                                     <ListGroup.Item>Python (IA generativa (LLAMA, PHI, ecc...), Machine Learning, Deep Learning, Transformers, Reti Convoluzionali)</ListGroup.Item>
@@ -279,4 +280,5 @@ function Home() {
 }
 
 export default Home;
+
 
