@@ -69,10 +69,10 @@ const CookieConsent = () => {
             <button
               onClick={handleShowPrivacy}
               style={{ color: "#f1d600", 
-                       background: none,
-                       border: none,
+                       background: "none",
+                       border: "none",
                        padding: 0 ,
-                       textDecoration: underline
+                       textDecoration: "underline"
               }}
             >
               Leggi la nostra Informativa sulla Privacy
@@ -166,6 +166,7 @@ const CookieConsent = () => {
 };
 
 export default CookieConsent;
+
 
 
 
