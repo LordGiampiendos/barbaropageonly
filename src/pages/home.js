@@ -118,13 +118,13 @@ function Home() {
                             </Card.Title>
                             <ListGroup variant="flush">
                                 <ListGroup.Item>
-                                    <i className="bi bi-flag text-muted me-2" /> 🇬🇧 Inglese – <strong>C1</strong> (intermedio)
+                                    <i className="bi bi-flag text-muted me-2" /> 🇬🇧 Inglese – <strong>C1</strong>
                                 </ListGroup.Item>
                                 <ListGroup.Item>
-                                    <i className="bi bi-flag text-muted me-2" /> 🇫🇷 Francese – <strong>A2</strong> (pieno)
+                                    <i className="bi bi-flag text-muted me-2" /> 🇫🇷 Francese – <strong>A2</strong>
                                 </ListGroup.Item>
                                 <ListGroup.Item>
-                                    <i className="bi bi-flag text-muted me-2" /> 🇪🇸 Spagnolo – <strong>B1</strong> (pieno)
+                                    <i className="bi bi-flag text-muted me-2" /> 🇪🇸 Spagnolo – <strong>B1</strong>
                                 </ListGroup.Item>
                                 <ListGroup.Item>
                                     <i className="bi bi-flag text-muted me-2" /> 🇩🇪 Tedesco – <strong>A1</strong>
@@ -282,6 +282,7 @@ function Home() {
 }
 
 export default Home;
+
 
 
 
