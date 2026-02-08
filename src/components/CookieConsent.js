@@ -67,6 +67,7 @@ const CookieConsent = () => {
             <br />
             <br />
             <a
+              href="#"
               onClick={handleShowPrivacy}
               style={{ color: "#f1d600" }}
             >
@@ -161,4 +162,5 @@ const CookieConsent = () => {
 };
 
 export default CookieConsent;
+
 
