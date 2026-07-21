@@ -62,17 +62,19 @@ const CookieConsent = () => {
           </Modal.Header>
           <Modal.Body>
             Questo sito utilizza cookie per migliorare l'esperienza utente.
-            Puoi scegliere di accettare tutti i cookie o solo quelli essenziali
-            (ad es. per l'autenticazione e la sessione).
+            Puoi scegliere di accettare tutti i cookie o solo quelli essenziali.
             <br />
             <br />
             <button
+              type="button"
               onClick={handleShowPrivacy}
-              style={{ color: "#f1d600", 
-                       background: "none",
-                       border: "none",
-                       padding: 0 ,
-                       textDecoration: "underline"
+              style={{
+                background: "none",
+                border: "none",
+                padding: 0,
+                color: "#f1d600",
+                textDecoration: "underline",
+                cursor: "pointer"
               }}
             >
               Leggi la nostra Informativa sulla Privacy
@@ -166,8 +168,3 @@ const CookieConsent = () => {
 };
 
 export default CookieConsent;
-
-
-
-
-
